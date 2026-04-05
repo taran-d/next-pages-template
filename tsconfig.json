@@ -1,8 +1,16 @@
 {
   "compilerOptions": {
-    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "types": [
+      "node",
+      "jest",
+      "@testing-library/jest-dom"
+    ],
     "target": "es2015",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -16,15 +24,27 @@
     "jsx": "react-jsx",
     "incremental": true,
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".storybook/main.ts",
-    ".storybook/preview.tsx"
+    ".storybook/preview.tsx",
+    "src/vendor/rjsf-mantine-fixed.js",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
